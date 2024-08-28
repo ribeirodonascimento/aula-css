@@ -196,4 +196,411 @@ top right
   <p>This is a paragraph</p>
 </body>
 
-5. 
+                          Exercise:5
+Use the correct background property to make the background image NOT scroll with the rest of the page.
+
+
+<style>
+body {
+  background-image: url("img_tree.png");
+  
+background-attachment
+: 
+fixed
+;
+}
+</style> 
+  CSS Borde
+                      Exercise: 1
+Use the border shorthand property to set a "4px", "dotted", "red" border for the <p> elements.
+
+
+<style>
+p {
+  
+border
+: 
+4px dotted red
+;
+}
+</style>
+
+<body>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph</p>
+  <p>This is a paragraph</p>
+</body>
+
+               Exercise:2
+Use the correct border property to set the border color to "red".
+
+
+<style>
+p {
+  border-style: dotted;
+  border-width: 4px;
+  
+border-color
+: red;
+}
+</style>
+
+<body>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph</p>
+  <p>This is a paragraph</p>
+</body>
+                    Exercise:3
+Use the correct border property to set the LEFT border to "dotted".
+
+
+<style>
+p {
+  
+border-left-style
+: dotted;
+}
+</style>
+
+<body>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph</p>
+  <p>This is a paragraph</p>
+</body>
+
+                 Exercise: 4
+Use the correct border property to add ROUNDED borders to the <p> elements.
+
+
+<style>
+p {
+  border: 2px solid red;
+  
+border-radius
+: 5px;
+}
+</style>
+
+<body>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph</p>
+  <p>This is a paragraph</p>
+</body>
+      CSS Margin
+       Exercise:1
+Add a 20 pixels left margin to the <h1> element.
+
+
+<style>
+h1 {
+  
+margin-left
+: 20px;
+}
+</style>
+
+<body>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph</p>
+  <p>This is a paragraph</p>
+</body>
+              Exercise: 2
+Use the shorthand margin property to add 20 pixels top and bottom margins, and 40 pixels left and right margins, on the <h1> element.
+
+
+<style>
+h1 {
+  margin: 
+20px 40px
+;
+}
+</style>
+
+<body>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph</p>
+  <p>This is a paragraph</p>
+</body>
+                   Exercise:3
+For the <h1> element, use the shorthand margin property to add these margins:
+left: 10px
+right: 15px
+top: 20px
+bottom: 25px
+
+
+<style>
+h1 {
+  margin: 
+20
+px 
+15
+px 
+25
+px 
+10
+px;
+}
+</style>
+
+<body>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph</p>
+  <p>This is a paragraph</p>
+</body>
+            Exercise: 4
+Use the margin property to center align the <h1> element.
+
+
+<style>
+h1 {
+  margin: 
+auto
+;
+}
+</style>
+
+<body>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph</p>
+  <p>This is a paragraph</p>
+</body>
+             CSS Padding
+                 Exercise: 1
+Set the top padding of the <h1> element to 30 pixels.
+
+
+<style>
+h1 {
+  
+padding-top
+: 30px;
+}
+</style>
+
+<body>
+
+  <h1>This is a heading</h1>
+  <p>This is a paragraph</p>
+  <p>This is a paragraph</p>
+</body>
+                  Exercise:2
+Set the padding of all sides of the <h1> element to 30 pixels.
+
+
+<style>
+h1 {
+  
+padding
+: 30px;
+}
+</style>
+
+<body>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph</p>
+  <p>This is a paragraph</p>
+</body>
+             Exercise:3
+Use the shorthand padding property to add 10 pixels left and right padding, and 40 pixels top and bottom padding, on the <h1> element.
+
+
+<style>
+h1 {
+  padding: 
+40
+px 
+10
+px;
+}
+</style>
+
+<body>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph</p>
+  <p>This is a paragraph</p>
+</body>
+      CSS Height/Width
+                     Exercise: 1
+Set the height of the <h1> element to "100px".
+
+
+<style>
+h1 {
+  
+height
+: 100px;
+}
+</style>
+
+<body>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph</p>
+  <p>This is a paragraph</p>
+</body>
+             Exercise:2
+Set the width of the <h1> element to "50%".
+
+
+<style>
+h1 {
+  
+width
+: 50%;
+}
+</style>
+
+<body>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph</p>
+  <p>This is a paragraph</p>
+</body>
+         Css Box Model
+                  Exercise:1
+Set the width of the <div> element to "200px".
+
+
+<style>
+div
+ {
+  
+width
+: 
+200px
+;
+}
+</style>
+
+<body>
+
+<div>
+Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua.
+</div>
+
+</body>
+             Exercise:2
+Add a 2px solid red border to the <div> element.
+
+
+<style>
+div
+ {
+  width: 200px;
+  
+border
+: 2px solid red;
+}
+</style>
+
+<body>
+
+<div>
+Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua.
+</div>
+
+</body>
+                              Exercise:3
+Add 25 pixels space between the <div> element's border and its content.
+
+
+<style>
+div {
+  width: 200px;
+  border: 2px solid red;  
+  
+padding
+: 25px;
+}
+</style>
+
+<body>
+
+<div>
+Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua.
+</div>
+
+</body>
+                Exercise:4
+Add a 25 pixels space outside, to the left of the <div> element.
+
+
+<style>
+div {
+  width: 200px;
+  border: 2px solid red;  
+  padding: 25px;
+  
+margin-left
+: 25px;
+}
+</style>
+
+<body>
+
+<div>
+Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua.
+</div>
+
+</body>
+  Css Outline
+             Exercise:1
+Set a solid, 5px outline border for the <div> element.
+
+
+<style>
+div {
+  
+outline-style
+: solid;
+  
+outline-width
+: 5px;
+}
+</style>
+
+<body>
+
+<div>
+Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua.
+</div>
+
+</body>
+           Exercise:2
+Set the color of the outline border to red.
+
+
+<style>
+div {
+  outline-style: solid;
+  outline-width: 5px;
+  
+outline-color
+: red;
+}
+</style>
+
+<body>
+
+<div>
+Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua.
+</div>
+
+</body>
