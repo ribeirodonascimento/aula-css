@@ -1,0 +1,197 @@
+                               Questao 1
+Set the text color to red, for all <p> elements.
+<style>
+p
+ {
+  
+color:
+ red;
+}
+</style>
+                                    Questao 2
+Exercise:
+Set the text color to red, for the element with id="para1".
+
+
+<style>
+#para1
+ {    
+color: red;
+}
+</style>
+
+<body>
+  <h1>This is a heading</h1>
+  <p id="para1">This is a paragraph</p>
+</body>
+                                              Exercise: 3
+Set the text color to red, for elements with class="colortext".
+<style>
+.colortext
+ {
+  
+color:
+ red;
+}
+</style>
+
+<body>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph</p>
+  <p class="colortext">This is a paragraph</p>
+  <p class="colortext">This is a paragraph</p>
+</body>
+                                                    Exercise: 4
+Set the text color to red, for all <p> and <h1> elements. Group the selectors to minimize code.
+
+<style>
+h1, p
+ {
+  
+color:
+ red;
+}
+</style>
+
+<body>
+  <h1>This is a heading</h1>
+  <h2>This is a smaller heading</h2>
+  <p>This is a paragraph</p>
+  <p>This is a paragraph</p>
+</body>
+       CSS How To...            Exercise: 1
+Add an external style sheet with the URL: "mystyle.css".
+
+
+<head>
+<link rel="stylesheet" href="mystyle.css">
+
+</head>
+
+<body>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph</p>
+  <p>This is a paragraph</p>
+</body>
+                                                Exercise: 2
+Set the page's background color to red.
+
+
+<style>
+body
+ {
+  
+background-color:
+ red;
+}
+</style>
+
+<body>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph</p>
+  <p>This is a paragraph</p>
+</body>
+                                                    Exercise: 3
+Set the page's background color to red, by using an inline style.
+<body 
+style
+="background-color: red">
+  <h1>This is a heading</h1>
+  <p>This is a paragraph</p>
+  <p>This is a paragraph</p>
+</body>
+                                    Exercise: 4
+Insert the missing parts to make the CSS code correct.
+<style>
+p 
+{
+
+  color
+:
+ red;
+}
+
+</style>
+     CSS Banckground 
+                  Exercise:1
+Set the background color of the <h1> element to "lightblue".
+
+
+<style>
+h1 {
+  
+background-color
+: lightblue;
+}
+</style>
+
+<body>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph</p>
+  <p>This is a paragraph</p>
+</body>
+
+             Exercise:2
+Set "paper.gif" as the background image of the page.
+
+
+<style>
+body {
+  
+background-image
+: 
+url("paper.gif")
+;
+}
+</style>
+
+<body>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph</p>
+  <p>This is a paragraph</p>
+</body>
+              Exercise:3
+Make the background image repeat only vertically.
+
+
+<style>
+body {
+  background-image: url("img_tree.png");
+  
+background-repeat
+: 
+repeat-y
+;
+}
+</style>
+
+<body>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph</p>
+  <p>This is a paragraph</p>
+</body>
+                    Exercise:4
+Specify that the background image should be shown once, in the top right corner.
+
+
+<style>
+body {
+  background-image: url("img_tree.png");
+  
+background-repeat
+: 
+no-repeat
+;
+  
+background-position
+: 
+top right
+;
+}
+</style>
+
+<body>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph</p>
+  <p>This is a paragraph</p>
+</body>
