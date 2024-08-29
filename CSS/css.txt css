@@ -1436,3 +1436,647 @@ vitae scelerisque enim ligula venenatis dolor.
 </body>
 
                     Css Align
+
+EXERCISE 1
+
+Use the margin property to make sure that the <div> element is center aligned according to its parent element.
+
+
+<style>
+.intro {
+  width: 200px;
+margin: auto;
+}
+</style>
+
+<body>
+
+<div class="intro">
+Lorem ipsum dolor sit amet,
+consectetur adipiscing elit.
+Phasellus imperdiet, nulla et dictum interdum,
+nisi lorem egestas odio,
+vitae scelerisque enim ligula venenatis dolor.
+</div>
+
+</body>
+
+EXERCISE 2
+
+Position the <div> element all the way to the right by using absolute positioning.
+
+
+<style>
+.intro {
+  width: 200px;
+  margin: auto;
+position: absolute;
+ right: 0px;
+}
+</style>
+
+<body>
+
+<div class="intro">
+Lorem ipsum dolor sit amet,
+consectetur adipiscing elit.
+Phasellus imperdiet, nulla et dictum interdum,
+nisi lorem egestas odio,
+vitae scelerisque enim ligula venenatis dolor.
+</div>
+
+</body>
+
+CSS COMBINATORS
+
+EXERCISE 1
+
+Change the color of all <p> elements, that are descendants of <div> elements, to "red".
+
+<style>
+div p {
+  color: red;
+}
+</style>
+
+<body>
+
+<div>
+  <p>This is a paragraph.</p>
+  <p>This is a paragraph.</p>
+</div>
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+
+</body>
+
+EXERCISE 2
+
+Change the color of all <p> elements, that are immediate children of <div> elements, to "red".
+
+
+<style>
+div > p {
+  color: red;
+}
+</style>
+<body>
+<div>
+  <p>This is a paragraph.</p>
+  <p>This is a paragraph.</p>
+</div>
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+
+</body>
+
+EXERCISE 3
+
+Change the color of the first <p> element that is directly after a <div> element, to "red".
+
+<style>
+div + p {
+  color: red;
+}
+</style>
+
+<body>
+
+<div>
+  <p>This is a paragraph.</p>
+  <p>This is a paragraph.</p>
+</div>
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+
+</body>
+
+EXERCISE 4
+
+Change the color of the <p> elements that are siblings of a <div> element, to "red".
+
+<style>
+div ~ p {
+  color: red;
+}
+</style>
+
+<body>
+
+<div>
+  <p>This is a paragraph.</p>
+  <p>This is a paragraph.</p>
+</div>
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+
+</body>
+
+CSS PSEUDO-CLASSES
+
+EXERCISE 1
+
+Set the background-color to red, when you mouse over a link.
+
+<style>
+a:hover {
+  background-color: red;
+}
+</style>
+
+<body>
+
+<h1>This is a header.</h1>
+<p>This is a paragraph.</p>
+<a href="https://w3schools.com">This is a link.</a>
+
+</body>
+
+EXERCISE 2
+
+Set the background-color to red, when you mouse over elements with the class "master".
+
+<style>
+.master:hover {
+  background-color: red;
+}
+</style>
+
+<body>
+
+<h1 class="master">This is a header.</h1>
+<p class="master">This is a paragraph.</p>
+<p>This is a paragraph.</p>
+
+</body>
+
+EXERCISE 3
+
+Set the background-color to red, of any <p> element that are the first child of any element.
+
+<style>
+p:first-child {
+  background-color: red;
+}
+</style>
+
+<body>
+
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+
+</body>
+
+EXERCISE 4
+
+Set the background-color to red, of any <input> element that are in focus.
+
+
+<style>
+input:focus {
+  background-color: red;
+}
+</style>
+
+<body>
+
+<form>
+  Name:
+  <input type="text" name="fname">
+  Age:
+  <input type="text" name="age">
+</form>
+
+</body>
+
+CSS PSEUDO-ELEMENTS
+
+EXERCISE 1
+
+Set the background-color to red, of the first line of the paragraph.
+
+<style>
+.intro::first-line {
+  background-color: red;
+}
+</style>
+
+<body>
+
+<p class="intro">
+In my younger and more vulnerable years
+my father gave me some advice that I've
+been turning over in my mind ever since.
+'Whenever you feel like criticizing anyone,' he told me,
+'just remember that all the people in this world
+haven't had the advantages that you've had.'
+</p>
+
+</body>
+
+EXERCISE 2
+
+Set the background-color to red, for the first letter of the <p> element.
+
+<style>
+.intro::first-letter {
+  background-color: red;
+}
+</style>
+
+<body>
+
+<p class="intro">
+In my younger and more vulnerable years
+my father gave me some advice that I've
+been turning over in my mind ever since.
+'Whenever you feel like criticizing anyone,' he told me,
+'just remember that all the people in this world
+haven't had the advantages that you've had.'
+</p>
+
+</body>
+
+EXERCISE 3
+
+Insert the image "smiley.gif" before, and after any <p>element, using the ::before and ::after pseudo-elements.
+
+
+<style>
+p::before {
+  
+content: url('smiley.gif');
+}
+p::after {
+  
+content: url('smiley.gif');
+}
+</style>
+
+<body>
+
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+
+</body>
+
+CSS OPACITY
+
+EXERCISE 1
+
+Use CSS to set the transparency of the image to 50%.
+
+<style>
+img {
+opacity: 0.5;
+}
+</style>
+
+<body>
+  <img src="klematis.jpg" width="150" height="113">
+</body>
+
+EXERCISE 2
+
+Use CSS to "remove" the transparency of the image when the user mouse over the image.
+
+
+<style>
+img {
+  opacity: 0.4;
+}
+img:hover {
+ opacity: 1.0;
+}
+</style>
+
+<body>
+  <img src="klematis.jpg" width="150" height="113">
+</body>
+
+CSS ATTRIBUTE SELECTORS
+
+EXERCISE 1
+
+Set the background color to "red" for <a> elements that have a target attribute.
+
+<style>
+a[target] {
+  background-color: red;
+}
+</style>
+
+<body>
+  <a href="https://w3schools.com">w3schools.com</a>
+  <a href="http://disney.com" target="_blank">Disney.com</a>
+  <a href="http://wikipedia.org" target="_top">wikipedia.org</a>
+</body>
+
+EXERCISE 2
+
+Set the background color to "red" for <a> elements that have a target attribute with the value "_blank".
+
+<style>
+a[target="_blank"] {
+  background-color: red;
+}
+</style>
+
+<body>
+  <a href="https://w3schools.com">w3schools.com</a>
+  <a href="http://disney.com" target="_blank">Disney.com</a>
+  <a href="http://wikipedia.org" target="_top">wikipedia.org</a>
+</body>
+
+EXERCISE 3
+
+Set a border for <img> elements that have a title attribute that contains the word blue.
+
+<style>
+img
+[title~="blue"] {
+  border: 5px solid red;
+}
+</style>
+
+<body>
+  <img src="klematis.jpg" title="blue flower">
+  <img src="klematis2.jpg" title="purple flowers">
+  <img src="klematis3.jpg" title="two blue flowers">  
+</body>
+ 
+EXERCISE 4
+
+Set a border for <img> elements that have a title attribute starting with blue.
+
+<style>
+img
+[title^="blue"] {
+  border: 5px solid red;
+}
+</style>
+
+<body>
+  <img src="klematis.jpg" title="blue flower">
+  <img src="klematis2.jpg" title="purple flowers">
+  <img src="klematis3.jpg" title="two blue flowers">  
+</body>
+
+EXERCISE 5
+
+Set a border for <img> elements that have a title attribute ending with the word flower (not flowers).
+
+<style>
+img
+[title$="flower"] {
+  border: 5px solid red;
+}
+</style>
+
+<body>
+  <img src="klematis.jpg" title="blue flower">
+  <img src="klematis2.jpg" title="purple flowers">
+  <img src="klematis3.jpg" title="two blue flowers">  
+</body>
+
+EXERCISE 6
+
+Set a border for <img> elements that have a title attribute containing the value flower (hint: flowers also contain flower).
+
+<style>
+img
+[title*="flower"] {
+  border: 5px solid red;
+}
+</style>
+
+<body>
+  <img src="klematis.jpg" title="blue flower">
+  <img src="klematis2.jpg" title="purple flowers">
+  <img src="klematis3.jpg" title="two blue flowers">  
+</body>
+
+CSS ROUNDED CORNERS
+
+EXERCISE 1
+
+Give the div element rounded corners.
+
+<style>
+div {
+  background: red;
+border-radius: 10px;  
+}
+</style>
+
+<body>
+  <div>This is a div element. It has some text.</div>
+</body>
+
+EXERCISE 2
+
+Give the div element a rounded corner on the bottom left side.
+
+<style>
+div {
+  background: red;
+border-bottom-left-radius: 10px;  
+}
+</style>
+
+<body>
+  <div>This is a div element. It has some text.</div>
+</body>
+
+CSS BORDER IMAGES
+
+EXERCISE 1
+
+Give the div element an image border. Use the short hand property to define the details of the image border.
+
+<style>
+div {
+  border: 10px solid transparent;
+   border-image: url(border.png) 30 round;
+}
+</style>
+
+<body>
+  <div>This is a div element. It has some text.</div>
+</body>
+
+EXERCISE 2
+
+The image border needs a border-image-repeat value, insert one of the legal values.
+
+<style>
+div {
+  border-image-source: url(border.png);
+  border-image-repeat: stretch;  
+  border-image-slice: 30;
+}
+</style>
+
+<body>
+  <div>This is a div element. It has some text.</div>
+</body>
+
+CSS BACKGROUNDS
+
+EXERCISE 1
+
+Add two background images to the <body> element.
+
+img1.gif and img2.gif.
+
+Make sure that img2.gif is displayed on top of img1.gif.
+
+<style>
+body {
+  background-image: url('img2.gif'), url('img1.gif');
+}
+</style>
+
+<body>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph</p>
+  <p>This is a paragraph</p>
+</body>
+
+EXERCISE 2
+
+Set the width of the background image to 100px, and the height to 80px.
+
+
+<style>
+body {
+  background-image: url('img1.gif');
+  background-size: 100px 80px; 
+  background-repeat: no-repeat;  
+}
+</style>
+
+<body>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph</p>
+  <p>This is a paragraph</p>
+</body>
+
+EXERCISE 3
+
+Position the two background images in each top corner.
+
+img1.gif at the left and img2.gif at the right.
+
+
+<style>
+body {
+  background-image: url('img1.gif'), url('img2.gif');
+  background-repeat: no-repeat, no-repeat;
+   background-position: left top, right top;
+}
+</style>
+
+<body>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph</p>
+  <p>This is a paragraph</p>
+</body>
+
+EXERCISE 4
+
+There is a CSS property that allows us to specify if the background image should be positioned according to the border, padding or the content.
+
+Insert the correct CSS background property, and value, to position the image according to where the content is positioned.
+
+<style>
+#example1 {
+  padding: 20px;
+  background-image: url('img1.gif');
+  background-repeat: no-repeat;
+  background-origin: content-box;
+}
+</style>
+
+EXERCISE 5
+
+The background-clip" property has three possible values, insert one of them.
+
+<style>
+#example1 {
+  border: 10px dotted red;
+  padding: 20px;
+  background-color: yellow;
+  background-clip: padding-box;
+}
+</style>
+
+CSS COLORS
+
+EXERCISE 1
+
+Insert the RGBA color value for a full red background color of the <h1> element, with no transparency.
+
+<style>
+h1 {
+  background-color: rgba(255, 0, 0, 1.0);
+}
+</style>
+
+<body>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph</p>
+  <p>This is a paragraph</p>
+</body>
+
+EXERCISE 2
+
+Use hue, saturation and lightness to set a background color of the <h1> element.
+
+Set the hue to red, saturation to 100%, and lightness to 50%.
+
+<style>
+h1 {
+  background-color: hsl(0, 100%, 50%);
+}
+</style>
+
+<body>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph</p>
+  <p>This is a paragraph</p>
+</body>
+
+EXERCISE 3
+
+There is also a method where we can specify the alpha channel as well as hue, saturation, and lightness, what is the name of this method?
+
+<style>
+h1 {
+  background-color: hsla (0, 100%, 50%, 0.3);
+}
+</style>
+
+<body>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph</p>
+  <p>This is a paragraph</p>
+</body>
+
+EXERCISE 4
+
+We can set the transparence for the whole element, not only the background, by using which CSS property?
+
+<style>
+h1 {
+  background-color: rgb(255, 0, 0);
+  opacity: 0.3;
+}
+</style>
+
+<body>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph</p>
+  <p>This is a paragraph</p>
+</body>
+
